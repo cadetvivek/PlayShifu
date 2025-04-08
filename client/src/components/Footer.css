@@ -1,0 +1,266 @@
+/* FooterPage.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  /* Add background color or other styling for the main content area */
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #f2214f;
+  color: white;
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Benefits Bar */
+.benefits-bar {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.icon-circle {
+  background-color: #ffcc00;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.check-icon {
+  color: black;
+  font-size: 14px;
+}
+
+.icon-square {
+  background-color: white;
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.lock-icon {
+  color: black;
+  font-size: 14px;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 10px 0;
+}
+
+/* Main Footer Content */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 0 10px 20px;
+}
+
+.newsletter-column {
+  flex: 1.5;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: opacity 0.3s;
+}
+
+.footer-column ul li a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Newsletter Section */
+.newsletter {
+  margin-bottom: 30px;
+}
+
+.newsletter p {
+  font-size: 14px;
+  max-width: 300px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.whatsapp-btn {
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background-color: #e6b800;
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+}
+
+.social-icons a:hover {
+  opacity: 0.8;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.payment-methods {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.payment-icon {
+  height: 30px;
+  width: 50px;
+  background-color: white;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.apple-pay {
+  background-image: url("/api/placeholder/50/30"); /* Replace with actual Apple Pay logo */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mastercard {
+  background-image: url("/api/placeholder/50/30"); /* Replace with actual Mastercard logo */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.visa {
+  background-image: url("/api/placeholder/50/30"); /* Replace with actual Visa logo */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.google-pay {
+  background-image: url("/api/placeholder/50/30"); /* Replace with actual Google Pay logo */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .benefits-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+  }
+  
+  .footer-column {
+    margin-bottom: 30px;
+    min-width: 100%;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .payment-methods {
+    justify-content: center;
+    margin-top: 15px;
+  }
+}

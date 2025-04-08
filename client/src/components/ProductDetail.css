@@ -1,0 +1,241 @@
+.product-detail {
+    margin: 20px 0 40px;
+  }
+  
+  .product-detail-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .product-gallery-column {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .product-info-column {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .product-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .product-category {
+    color: #e615a9;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .product-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .stars {
+    display: flex;
+    margin-right: 10px;
+  }
+  
+  .star {
+    color: #ccc;
+    font-size: 18px;
+  }
+  
+  .star.filled {
+    color: #FFD700;
+  }
+  
+  .rating-value {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .review-count {
+    color: #666;
+    margin-right: 15px;
+  }
+  
+  .write-review {
+    color: #e615a9;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .product-price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .price {
+    font-size: 28px;
+    font-weight: 700;
+    color: #e615a9;
+    margin-right: 10px;
+  }
+  
+  .original-price {
+    font-size: 20px;
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+  }
+  
+  .discount-badge {
+    background-color: #F7DD06;
+    color: #333;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .product-features {
+    margin-bottom: 25px;
+  }
+  
+  .feature-item {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .feature-bullet {
+    color: #e615a9;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  .product-actions {
+    margin-top: 30px;
+  }
+  
+  .color-selection {
+    margin-bottom: 20px;
+  }
+  
+  .color-selection p {
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .color-options {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .color-option:hover {
+    transform: scale(1.1);
+  }
+  
+  .color-option.selected {
+    border-color: #333;
+    transform: scale(1.1);
+  }
+  
+  .color-option.blue {
+    background-color: #4a90e2;
+  }
+  
+  .color-option.green {
+    background-color: #50c878;
+  }
+  
+  .color-option.yellow {
+    background-color: #F7DD06;
+  }
+  
+  .color-option.red {
+    background-color: #e74c3c;
+  }
+  
+  .quantity-selector {
+    margin-bottom: 20px;
+  }
+  
+  .quantity-selector p {
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .quantity-control {
+    display: flex;
+    align-items: center;
+    max-width: 120px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .quantity-btn {
+    width: 36px;
+    height: 36px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .quantity-control input {
+    width: 48px;
+    height: 36px;
+    text-align: center;
+    border: none;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .quantity-control input::-webkit-inner-spin-button,
+  .quantity-control input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .add-to-cart-btn, .buy-now-btn {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #F7DD06;
+    color: #333;
+  }
+  
+  .buy-now-btn {
+    background-color: #670C85;
+    color: white;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #e6cd06;
+  }
+  
+  .buy-now-btn:hover {
+    background-color: #560a70;
+  }
+  
+  @media (max-width: 768px) {
+    .product-detail-container {
+      flex-direction: column;
+    }
+  }

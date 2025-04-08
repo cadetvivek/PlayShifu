@@ -1,0 +1,54 @@
+.device-compatibility {
+    background-color: #f2f6fd;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 50px 0;
+  }
+  
+  .devices-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .device-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+  }
+  
+  .device-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .device-icon {
+    margin-bottom: 15px;
+  }
+  
+  .device-icon .material-icons {
+    font-size: 40px;
+    color: #670C85;
+  }
+  
+  .device-name {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .device-description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .devices-container {
+      grid-template-columns: 1fr;
+    }
+  }
